@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nome.css">
+</head>
+<body>
+    <form>
+        <h1>Digite sua idade</h1>
+        <input type="number" placeholder="Digite sua idade" id="username" autocomplete="off">
+        <input type="button" value="Descobrir" onclick="clique();return false">
+        <br>
+        <a href="ano.html">Esqueceu sua idade? Clique aqui.</a>
+    </form>
+</body>
+<script>
+    let name = document.getElementById("username")
+
+    function clique(){
+        if(name.value == ""){
+
+        }else{
+        alert("Sua idade é " + name.value)
+    }
+    }
+</script>
+</html>

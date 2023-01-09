@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nome.css">
+</head>
+<body>
+    <form>
+        <h1>Digite seu ano de nascimento</h1>
+        <input type="number" placeholder="Digite seu ano de nascimento" id="username" autocomplete="off">
+        <input type="button" value="Descobrir" onclick="clique();return false">
+        <br>
+        <a href="idade.html">Esqueceu seu ano de nascimento? Clique aqui.</a>
+    </form>
+</body>
+<script>
+    let name = document.getElementById("username")
+
+    function clique(){
+        if(name.value == ""){
+
+        }else{
+            var idade = 2023 - name.value
+            alert("Em 2023 você fará/já fez " + idade + " anos de idade.")
+    }
+    }
+</script>
+</html>
